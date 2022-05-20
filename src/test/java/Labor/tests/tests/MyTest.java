@@ -1,22 +1,12 @@
-package Labor.tests;
-
-import Labor.tests.pages.DashBoardPage;
-import Labor.tests.pages.LoginPage;
-import org.testng.Assert;
+package Labor.tests.tests;
 import org.testng.annotations.Test;
 
 
-public class MyTest {
+public class MyTest extends BaseTest{
 
     @Test
-    public void test() throws InterruptedException {
+    public void test(){
 
-
-        LoginPage loginPage = new LoginPage();
-        loginPage.login("Petko, O", "sunnyday");
-        DashBoardPage dashBoardPage = new DashBoardPage();
-        String userName = dashBoardPage.getUserName();
-        Assert.assertEquals(userName, "Oleg Petko");
 
 //        driver.quit();
     }
